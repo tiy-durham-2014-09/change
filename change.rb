@@ -8,9 +8,9 @@ class Cashier
   end
 
   def change
-    cents = (@total * 100).to_i
-    @dollars = cents / 100
-    cents = cents % 100
+    total = (@total * 100).to_i
+    @dollars = total / 100
+    cents = total % 100
 
     @quarters = cents / 25
     cents = cents % 25
